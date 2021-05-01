@@ -1,0 +1,3 @@
+D:\IIT\Second year\3D graphics programming\CW\3DExample1\x64\Debug\3DExample1.pdb
+D:\IIT\Second year\3D graphics programming\CW\3DExample1\3DExample1\x64\Debug\3DExample1.exe
+D:\IIT\Second year\3D graphics programming\CW\3DExample1\3DExample1\x64\Debug\3DExample1.pdb
