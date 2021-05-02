@@ -1,7 +1,4 @@
-/*W1790251 - Dulana Sandes Ratnayake - 2019763*/
 /*YOUTUBE VEDIO LINK - https://youtu.be/Nn5axeJZKEI */
-
-
 #include "include\freeglut.h"	// OpenGL toolkit - in the local shared folder
 #include <cmath>
 #include <iostream>
@@ -15,7 +12,6 @@ GLfloat carY = 20.0;
 GLfloat carAngle = 0;
 
 GLfloat score = 00;		//game score 
-
 
 /* reshape callback function
    executed when window is moved or resized. */
@@ -119,7 +115,8 @@ void display(void)
 	//Scoreboard Text
 	glColor3f(1.0, 1.0, 1.0);
 	glRasterPos2f(-18, 21); //define position on the screen
-	char* string = "Score";
+	//char* string = "Score";
+	sprintf_s(ScoreString, "Score:%2.0f", score);
 
 	while (*string) {
 		glutBitmapCharacter(GLUT_BITMAP_8_BY_13, *string++);
@@ -295,9 +292,6 @@ void display(void)
 	glVertex2f(20.0f, 20.0f);
 	glVertex2f(-20.0f, 20.0f);
 	glEnd();
-
-	
-
 	glFlush();     /* execute drawing commands in buffer */
 }
 
